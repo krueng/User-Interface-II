@@ -126,7 +126,7 @@ q:after {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  /* border:1px solid grey; */
+  /* border: 1px solid red; */
 }
 
 /*General Styles*/
@@ -135,13 +135,16 @@ html {
 }
 body {
   font-size: 1.6rem;
+  font-family: "El Messiri", sans-serif;
   line-height: 1.5;
   background-color: #fbfffb;
   color: #4f4f4f;
 }
 h1 {
-  font-size: 9rem;
+  font-family: "MonteCarlo", "Parisienne", cursive;
+  font-size: 10rem;
   color: #fbfffb;
+  text-decoration: underline;
 }
 h2 {
   font-size: 3rem;
@@ -152,12 +155,11 @@ h3 {
   text-align: center;
 }
 section {
-  padding: 4% 0;
+  padding: 1% 0;
 }
-/*Helper Classes*/
-.bgimg {
-  background-size: cover;
-  background-repeat: no-repeat;
+
+a {
+  text-decoration: none;
 }
 /*Header*/
 nav {
@@ -167,11 +169,20 @@ nav {
   top: 0;
   width: 100%;
   background-color: rgba(2, 16, 24, 0.801);
-  z-index: 999;
+  z-index: 99;
 }
+
+/*Helper Classes*/
+.bgimg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
 .logo {
   width: 15%;
 }
+
 .links {
   width: 50%;
   display: flex;
@@ -187,14 +198,29 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 0 1%;
-  background-color: goldenrod;
+  background-color: #fbfffb;
   border-radius: 15%;
-  text-decoration: none;
+  color: #4f4f4f;
 }
 
-.main-titles {
-  color: goldenrod;
+a:hover {
+  background-color: goldenrod;
+  color: black;
 }
+
+.main-titles button {
+  background-color: goldenrod;
+  color: black;
+  width: 30%;
+  height: 7vh;
+  font-size: 1.7rem;
+  border-radius: 15%;
+}
+
+button:hover {
+  background-color: #fbfffb;
+}
+
 /*top section styles*/
 #top {
   height: 80vh;
@@ -206,45 +232,90 @@ nav {
   background-position: top;
 }
 
-/*About Section Styles*/
-#about {
-  display: flex;
-  justify-content: flex-end;
-  padding: 20% 0;
-  background-image: url("../images/joshua-aragonunsplash.jpg");
-  background-position: center;
-}
-#about div {
-  width: 20%;
-  margin-right: 10%;
-}
-
 /*shop section styles*/
 .container {
   display: flex;
-  /* flex-wrap:wrap; */
   flex-flow: row wrap;
-  justify-content:space-between;
-}
-.one,
-.two,
-.three,
-.four,
-.five,
-.six {
-    width: 31%;
-    height: 50vh;
-    background: lightgray;
-    border: 1px solid black;
-    margin: 1% auto;  
+  justify-content: space-between;
+  gap: 32px;
+  padding: 2%;
 }
 
-.one {
-  background-image: url("../images/joshua-aragonunsplash.jpg");
+footer {
+  height: 15vh;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
-.two {
-  background-image: url("../images/joshua-aragonunsplash.jpg");
+
+footer div {
+  /* border: 1px solid; */
+  width: 10%;
+  height: 45%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfffb;
 }
-.three {
-  background-image: url("../images/joshua-aragonunsplash.jpg");
+
+footer div a:hover {
+  text-transform: uppercase;
+}
+
+/* Projects Section */
+.projectcls {
+  width: 31%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.projimg {
+  flex-grow: 1;
+  border: 3px dashed darksalmon;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: .5s;
+}
+.projimg:hover {
+  margin: 1%;
+  transition: .7s;
+}
+
+.project-one {
+  background-image: url("../images/sweeeatbakery.png");
+}
+
+.project-two {
+  background-image: url("../images/ypg.png");
+}
+
+.project-three {
+  background-image: url("../images/farmtotable.png");
+}
+
+.project-four {
+  background-image: url("../images/learninghowtocode.png");
+}
+
+.project-five {
+  background-image: url("../images/veryfantasticbiz.png");
+}
+
+.project-six {
+  background-image: url("../images/portfolio.png");
+}
+
+.projtext {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contact-button {
+  height: 7vh;
+  width: 10%;
+  border-radius: 15%;
 }

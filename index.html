@@ -4,9 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=El+Messiri:wght@500&family=MonteCarlo&family=Parisienne&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="style/index.css">
     <title>Adam K: Module 4 - CSS Layouts</title>
 </head>
+
 <body>
     <header>
         <nav>
@@ -15,30 +21,54 @@
             </div>
             <div class="links">
                 <a href="#top">Home</a>
-                <a href="#about">About</a>
-                <a href="#contact">Contact</a>
-                <a href="#projects">Projects</a>
+                <a href="about.html">About</a>
+                <a href="contact.html">Contact</a>
+                <a href="#proj">Projects</a>
             </div>
         </nav>
     </header>
+
     <section id="top" class="bgimg">
         <div class="main-titles">
             <h1>Adam Krueng</h1>
-            <button>My Projects</button>
+            <button id="proj" onclick="window.location.href='#proj';">My Projects</button>
         </div>
     </section>
 
-    <section id="shop">
+    <section id="projects">
         <div>
-        <div class="container">
-            <div class="one bgimg"><!--Empty div for background image--></div>
-            <div class="two bgimg"><!--Empty div for background image--></div>
-            <div class="three bgimg"><!--Empty div for background image--></div>
-            <div class="four bgimg"><!--Empty div for background image --></div>
-            <div class="five bgimg"><!--Empty div for background image --></div>
-            <div class="six bgimg"><!-- empty div for background image --></div>
-        </div><!--This closes the container div-->
-    </div>
-</section>
+            <div class="container">
+                <div class="projectcls">
+                    <div class="projimg project-one"><!-- Empty div for background image --></div>
+                    <div class="projtext"><a href="https://codepen.io/Krueng/pen/MWmGYRo">Sweet Eats Bakery</a></div>
+                </div>
+                <div class="projectcls">
+                    <div class="projimg project-two"><!-- Empty div for background image --></div>
+                    <div class="projtext"><a href="https://ypg.netlify.app/">Yosemite Park Guide</a></div>
+                </div>
+                <div class="projectcls">
+                    <div class="projimg project-three"><!-- Empty div for background image --></div>
+                    <div class="projtext"><a href="https://codepen.io/Krueng/pen/WNjKNMM?editors=1000">Farm To Table</a></div>
+                </div>
+                <div class="projectcls">
+                    <div class="projimg project-four"><!-- Empty div for background image --></div>
+                    <div class="projtext"><a href="https://codepen.io/Krueng/pen/dyWeBjO">Learning How To Code</a></div>
+                </div>
+                <div class="projectcls">
+                    <div class="projimg project-five"><!-- Empty div for background image --></div>
+                    <div class="projtext"><a href="https://codepen.io/Krueng/pen/wRGNjR">Very Fantastic Business</a></div>
+                </div>
+                <div class="projectcls">
+                    <div class="projimg project-six"><!-- Empty div for background image --></div>
+                    <div class="projtext"><a href="https://akport.netlify.app/">Porfolio</a></div>
+                </div>
+            </div>
+            <!--This closes the container div-->
+        </div>
+    </section>
+    <footer>
+        <div class="contact-button"><a href="contact.html">Contact Me</a></div>
+    </footer>
 </body>
+
 </html>
