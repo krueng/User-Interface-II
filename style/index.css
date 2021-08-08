@@ -170,6 +170,30 @@ nav {
   background-color: rgba(2, 16, 24, 0.801);
   z-index: 99;
 }
+/* contact.html */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 1%;
+  box-sizing: border-box;
+  margin-top: 1%;
+  margin-bottom: 1.5%;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: goldenrod;/* #04AA6D; */
+  color: black;
+  padding: 1.1% 2%;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: gold;/* #45a049; */
+}
 
 /*Helper Classes*/
 .bgimg {
@@ -197,13 +221,13 @@ nav {
   align-items: center;
   justify-content: center;
   margin: 0 1%;
-  background-color: #fbfffb;
+  background-color: goldenrod;
   border-radius: 15%;
   color: #4f4f4f;
 }
 
-a:hover {
-  background-color: goldenrod;
+.links a:hover {
+  background-color: gold;
   color: black;
 }
 
@@ -236,8 +260,17 @@ button:hover {
   display: flex;
   flex-flow: row wrap;
   justify-content: space-between;
-  gap: 32px;
+  gap: 5vw 0;
   padding: 2%;
+}
+/* contact.html */
+.contact-container {
+  border-radius: .5rem;
+  background-color: #f2f2f2;
+  padding: 1%;
+}
+.contact-mid{
+margin: 10vh 0;
 }
 
 footer {
@@ -269,12 +302,14 @@ footer div a:hover {
   height: 50vh;
   display: flex;
   flex-direction: column;
-  align-items: space-between;
+  justify-content: space-around;
+  /* align-items: space-between; */
 }
 
 .projimg {
   flex-grow: 1;
-  border: 3px dashed darksalmon;
+  border: 1px solid goldenrod;
+  border-radius: 3%;
   background-size: cover;
   background-repeat: no-repeat;
   transition: 0.5s;
@@ -315,21 +350,78 @@ footer div a:hover {
 
 .contact-button {
   height: 7vh;
-  width: 10%;
-  border-radius: 15%;
+  width: 13%;
+  border-radius: 1rem;
+}
+.contact-button:hover {
+  background-color: gold;
 }
 
 /* Use a media query to add a breakpoint at 800px: */
 @media screen and (max-width: 800px) {
-  .left,
-  .main,
-  .right {
+  *,
+  html,
+  body {
     width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    display: flex;
+    flex-direction: column;
   }
+  h1 {
+    font-size: 9rem;
+  }
+  /*Header*/
+  nav {
+    position: relative;
+  }
+  .logo {
+    width: 35%;
+  }
+  
+  .links {
+    width: 100%;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .links a {
+    width: 20%;
+    height: 100%;
+    font-size: 2.5rem;
+  }
+  
+  #top {
+    margin: 5% 0;
+    height: 100%;
+    background-position: bottom;
+  }
+  .main-titles {
+    align-items: center;
+  }
+  .main-titles button {
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+  /* Projects Section */
+  .container {
+    justify-content:space-evenly;
+  }
+  .projectcls {
+    width: 47%;
+    display: flex;
+    justify-content: space-evenly;  
+  }
+
+/* Footer */
+  .contact-button {
+    width: 35%;
+    border-radius: 1rem; 
+    text-align: center;
+  }
+
 }
 
 /* Use a media query to add a breakpoint at 500px: */
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 500px) {
   *,
   html,
   body {
