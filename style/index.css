@@ -126,7 +126,6 @@ q:after {
   padding: 0;
   margin: 0;
   max-width: 100%;
-  /* border: 1px solid red; */
 }
 
 /*General Styles*/
@@ -208,19 +207,6 @@ a:hover {
   color: black;
 }
 
-.main-titles button {
-  background-color: goldenrod;
-  color: black;
-  width: 30%;
-  height: 7vh;
-  font-size: 1.7rem;
-  border-radius: 15%;
-}
-
-button:hover {
-  background-color: #fbfffb;
-}
-
 /*top section styles*/
 #top {
   height: 80vh;
@@ -232,7 +218,20 @@ button:hover {
   background-position: top;
 }
 
-/*shop section styles*/
+.main-titles button {
+  background-color: goldenrod;
+  color: black;
+  width: 30%;
+  height: 7vh;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+button:hover {
+  background-color: #fbfffb;
+}
+
+/*Projects section styles*/
 .container {
   display: flex;
   flex-flow: row wrap;
@@ -278,11 +277,11 @@ footer div a:hover {
   border: 3px dashed darksalmon;
   background-size: cover;
   background-repeat: no-repeat;
-  transition: .5s;
+  transition: 0.5s;
 }
 .projimg:hover {
   margin: 1%;
-  transition: .7s;
+  transition: 0.7s;
 }
 
 .project-one {
@@ -318,4 +317,87 @@ footer div a:hover {
   height: 7vh;
   width: 10%;
   border-radius: 15%;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  .left,
+  .main,
+  .right {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+  }
+}
+
+/* Use a media query to add a breakpoint at 500px: */
+@media screen and (max-width: 550px) {
+  *,
+  html,
+  body {
+    width: 100%; /* The width is 100%, when the viewport is 500px or smaller */
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  /*Header*/
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  nav {
+    /* display: flex; */
+    flex-flow: row wrap;
+    position: relative;
+    z-index: 0;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .links {
+    width: 100%;
+    flex-direction: column;
+  }
+  .links a {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 2.5rem;
+  }
+  /*top section styles*/
+  #top {
+    margin: 5% 0;
+    height: 100%;
+    background-position: bottom;
+  }
+  .main-titles {
+    align-items: center;
+  }
+  .main-titles button {
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+  /* Projects Section */
+  .container {
+    justify-content: center;
+  }
+  .projectcls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  /* Footer */
+  .contact-button {
+    width: 35%;
+    border-radius: 1rem; 
+    text-align: center;
+  }
+
 }
