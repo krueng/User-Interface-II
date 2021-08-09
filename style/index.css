@@ -1,1 +1,495 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS RESET
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+* {
+  box-sizing: border-box; /*when I give an item a width I want padding and margin to be applied within that width not in addition to it*/
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+}
+
+/*General Styles*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "El Messiri", sans-serif;
+  line-height: 1.5;
+  background-color: #fbfffb;
+  color: #4f4f4f;
+}
+h1 {
+  font-family: "MonteCarlo", "Parisienne", cursive;
+  font-size: 10rem;
+  color: #fbfffb;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+section {
+  padding: 1% 0;
+}
+
+a {
+  text-decoration: none;
+}
+/*Header*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(2, 16, 24, 0.801);
+  z-index: 99;
+}
+/* contact.html */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 1%;
+  border: 1px solid #ccc;
+  border-radius: 1%;
+  box-sizing: border-box;
+  margin-top: 1%;
+  margin-bottom: 1.5%;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: goldenrod;/* #04AA6D; */
+  color: black;
+  padding: 1.1% 2%;
+  border: none;
+  border-radius: 1rem;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: gold;/* #45a049; */
+}
+
+/*Helper Classes*/
+.bgimg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.logo {
+  width: 15%;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links a {
+  border: 1px solid;
+  width: 15%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1%;
+  background-color: goldenrod;
+  border-radius: 15%;
+  color: #4f4f4f;
+}
+
+.links a:hover {
+  background-color: gold;
+  color: black;
+}
+
+/*top section styles*/
+#top {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../images/ilya-pavlovunsplash.jpg");
+  background-position: top;
+}
+
+.main-titles button {
+  background-color: goldenrod;
+  color: black;
+  width: 30%;
+  height: 7vh;
+  font-size: 2rem;
+  border-radius: 1rem;
+}
+
+button:hover {
+  background-color: #fbfffb;
+}
+
+/*Projects section styles*/
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 5vw 0;
+  padding: 2%;
+}
+/* contact.html */
+.contact-container {
+  border-radius: .5rem;
+  background-color: #f2f2f2;
+  padding: 1%;
+}
+.contact-mid{
+margin: 10vh 0;
+}
+
+footer {
+  height: 15vh;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  /* border: 1px solid; */
+  width: 10%;
+  height: 45%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfffb;
+}
+
+footer div a:hover {
+  text-transform: uppercase;
+}
+
+/* Projects Section */
+.projectcls {
+  width: 31%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* align-items: space-between; */
+}
+
+.projimg {
+  flex-grow: 1;
+  border: 1px solid goldenrod;
+  border-radius: 3%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+.projimg:hover {
+  margin: 1%;
+  transition: 0.7s;
+}
+
+.project-one {
+  background-image: url("../images/sweeeatbakery.png");
+}
+
+.project-two {
+  background-image: url("../images/ypg.png");
+}
+
+.project-three {
+  background-image: url("../images/farmtotable.png");
+}
+
+.project-four {
+  background-image: url("../images/learninghowtocode.png");
+}
+
+.project-five {
+  background-image: url("../images/veryfantasticbiz.png");
+}
+
+.project-six {
+  background-image: url("../images/portfolio.png");
+}
+
+.projtext {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contact-button {
+  height: 7vh;
+  width: 13%;
+  border-radius: 1rem;
+}
+.contact-button:hover {
+  background-color: gold;
+}
+
+/* Use a media query to add a breakpoint at 800px: */
+@media screen and (max-width: 800px) {
+  *,
+  html,
+  body {
+    width: 100%; /* The width is 100%, when the viewport is 800px or smaller */
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 9rem;
+  }
+  /*Header*/
+  nav {
+    position: relative;
+  }
+  .logo {
+    width: 35%;
+  }
+  
+  .links {
+    width: 100%;
+    flex-direction: row;
+    justify-content:space-between;
+  }
+  .links a {
+    width: 20%;
+    height: 100%;
+    font-size: 2.5rem;
+  }
+  
+  #top {
+    margin: 5% 0;
+    height: 100%;
+    background-position: bottom;
+  }
+  .main-titles {
+    align-items: center;
+  }
+  .main-titles button {
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+  /* Projects Section */
+  .container {
+    justify-content:space-evenly;
+  }
+  .projectcls {
+    width: 47%;
+    display: flex;
+    justify-content: space-evenly;  
+  }
+
+/* Footer */
+  .contact-button {
+    width: 35%;
+    border-radius: 1rem; 
+    text-align: center;
+  }
+
+}
+
+/* Use a media query to add a breakpoint at 500px: */
+@media screen and (max-width: 500px) {
+  *,
+  html,
+  body {
+    width: 100%; /* The width is 100%, when the viewport is 500px or smaller */
+    display: flex;
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 8rem;
+  }
+  /*Header*/
+  header {
+    display: flex;
+    flex-flow: row wrap;
+    width: 100%;
+  }
+  nav {
+    /* display: flex; */
+    flex-flow: row wrap;
+    position: relative;
+    z-index: 0;
+  }
+  .logo {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .links {
+    width: 100%;
+    flex-direction: column;
+  }
+  .links a {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0;
+    font-size: 2.5rem;
+  }
+  /*top section styles*/
+  #top {
+    margin: 5% 0;
+    height: 100%;
+    background-position: bottom;
+  }
+  .main-titles {
+    align-items: center;
+  }
+  .main-titles button {
+    justify-content: center;
+    align-items: center;
+    border-radius: 0;
+  }
+  /* Projects Section */
+  .container {
+    justify-content: center;
+  }
+  .projectcls {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  /* Footer */
+  .contact-button {
+    width: 35%;
+    border-radius: 1rem; 
+    text-align: center;
+  }
+
+}
