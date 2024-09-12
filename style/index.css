@@ -1,1 +1,321 @@
 /* Add CSS styling here */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+   CSS RESET
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: "";
+  content: none;
+}
+
+* {
+  box-sizing: border-box; /*when I give an item a width I want padding and margin to be applied within that width not in addition to it*/
+  padding: 0;
+  margin: 0;
+  max-width: 100%;
+  /* border: 1px solid red; */
+}
+
+/*General Styles*/
+html {
+  font-size: 62.5%;
+}
+body {
+  font-size: 1.6rem;
+  font-family: "El Messiri", sans-serif;
+  line-height: 1.5;
+  background-color: #fbfffb;
+  color: #4f4f4f;
+}
+h1 {
+  font-family: "MonteCarlo", "Parisienne", cursive;
+  font-size: 10rem;
+  color: #fbfffb;
+  text-decoration: underline;
+}
+h2 {
+  font-size: 3rem;
+  text-align: center;
+}
+h3 {
+  font-size: 2.5rem;
+  text-align: center;
+}
+section {
+  padding: 1% 0;
+}
+
+a {
+  text-decoration: none;
+}
+/*Header*/
+nav {
+  display: flex;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(2, 16, 24, 0.801);
+  z-index: 99;
+}
+
+/*Helper Classes*/
+.bgimg {
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+}
+
+.logo {
+  width: 15%;
+}
+
+.links {
+  width: 50%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.links a {
+  border: 1px solid;
+  width: 15%;
+  height: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 1%;
+  background-color: #fbfffb;
+  border-radius: 15%;
+  color: #4f4f4f;
+}
+
+a:hover {
+  background-color: goldenrod;
+  color: black;
+}
+
+.main-titles button {
+  background-color: goldenrod;
+  color: black;
+  width: 30%;
+  height: 7vh;
+  font-size: 1.7rem;
+  border-radius: 15%;
+}
+
+button:hover {
+  background-color: #fbfffb;
+}
+
+/*top section styles*/
+#top {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-image: url("../images/ilya-pavlovunsplash.jpg");
+  background-position: top;
+}
+
+/*shop section styles*/
+.container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+  gap: 32px;
+  padding: 2%;
+}
+
+footer {
+  height: 15vh;
+  background-color: goldenrod;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer div {
+  /* border: 1px solid; */
+  width: 10%;
+  height: 45%;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #fbfffb;
+}
+
+footer div a:hover {
+  text-transform: uppercase;
+}
+
+/* Projects Section */
+.projectcls {
+  width: 31%;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  align-items: space-between;
+}
+
+.projimg {
+  flex-grow: 1;
+  border: 3px dashed darksalmon;
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: .5s;
+}
+.projimg:hover {
+  margin: 1%;
+  transition: .7s;
+}
+
+.project-one {
+  background-image: url("../images/sweeeatbakery.png");
+}
+
+.project-two {
+  background-image: url("../images/ypg.png");
+}
+
+.project-three {
+  background-image: url("../images/farmtotable.png");
+}
+
+.project-four {
+  background-image: url("../images/learninghowtocode.png");
+}
+
+.project-five {
+  background-image: url("../images/veryfantasticbiz.png");
+}
+
+.project-six {
+  background-image: url("../images/portfolio.png");
+}
+
+.projtext {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.contact-button {
+  height: 7vh;
+  width: 10%;
+  border-radius: 15%;
+}
